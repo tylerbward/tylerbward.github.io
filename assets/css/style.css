@@ -1,0 +1,185 @@
+/* Root variables for consistent theming */
+:root {
+    --primary-color: #2196F3;
+    --text-color: #333;
+    --background-color: #fff;
+}
+
+/* Base styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Navigation styles */
+nav {
+    border-bottom: 1px solid #eee;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: var(--primary-color);
+}
+
+/* Profile section styles */
+.profile-section {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.profile-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-info h1 {
+    margin: 0 0 0.5rem 0;
+    color: var(--text-color);
+}
+
+.profile-info h2 {
+    margin: 0 0 1rem 0;
+    font-weight: normal;
+    color: #666;
+}
+
+/* Social links styles */
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.social-links li {
+    margin-bottom: 0.5rem;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+.social-links i {
+    margin-right: 0.5rem;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    vertical-align: middle;
+}
+
+/* Section styles */
+.section {
+    margin: 2rem 0;
+}
+
+.section h2 {
+    color: var(--text-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+}
+
+/* News items styles */
+.news-item {
+    margin-bottom: 1rem;
+}
+
+/* General link styles */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Publication styles */
+.publication-list {
+    margin-top: 2rem;
+}
+
+.publication-item {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.publication-item h3 {
+    margin: 0 0 0.5rem 0;
+    color: var(--text-color);
+}
+
+.publication-item .authors {
+    color: #666;
+    margin: 0.5rem 0;
+}
+
+.publication-item .venue {
+    color: #888;
+    font-style: italic;
+    margin: 0.5rem 0;
+}
+
+.publication-links {
+    margin-top: 0.5rem;
+}
+
+.paper-link {
+    margin-right: 1rem;
+}
+
+.paper-link i {
+    margin-right: 0.25rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .profile-section {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .profile-image {
+        margin: 0 auto;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+}
