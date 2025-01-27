@@ -22,9 +22,15 @@ body {
 }
 
 /* Navigation styles */
+/* Navigation styles */
 nav {
     border-bottom: 1px solid #eee;
     padding: 1rem 0;
+}
+
+nav .container {
+    display: flex;
+    justify-content: flex-end; /* This moves the nav to the right */
 }
 
 nav ul {
@@ -35,16 +41,6 @@ nav ul {
     gap: 2rem;
 }
 
-nav a {
-    text-decoration: none;
-    color: var(--text-color);
-    font-weight: 500;
-}
-
-nav a:hover {
-    color: var(--primary-color);
-}
-
 /* Profile section styles */
 .profile-section {
     display: grid;
@@ -53,22 +49,34 @@ nav a:hover {
     margin: 2rem 0;
 }
 
+.profile-container {
+    text-align: center;
+}
+
+.profile-container h1 {
+    margin: 1rem 0 0.5rem 0;
+    color: var(--text-color);
+}
+
+.profile-container h2 {
+    margin: 0 0 1rem 0;
+    font-weight: normal;
+    color: #666;
+}
+
 .profile-image {
     width: 250px;
     height: 250px;
     border-radius: 50%;
     object-fit: cover;
-}
-
-.profile-info h1 {
-    margin: 0 0 0.5rem 0;
-    color: var(--text-color);
+    margin-bottom: 1rem;
 }
 
 .profile-info h2 {
-    margin: 0 0 1rem 0;
-    font-weight: normal;
-    color: #666;
+    color: var(--text-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+    margin-top: 0;
 }
 
 /* Social links styles */
