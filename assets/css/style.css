@@ -54,9 +54,9 @@ nav ul {
 }
 
 .profile-container h1 {
-    margin: 1rem 0 0.25rem 0; /* Reduced bottom margin to create smaller gap */
+    margin: 0.5rem 0 0.25rem 0; /* Reduced top margin from 1rem to 0.5rem */
     color: var(--text-color);
-    font-size: 2rem; /* Slightly smaller name size */
+    font-size: 2rem;
 }
 
 .profile-container h2 {
@@ -71,7 +71,7 @@ nav ul {
     height: 250px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem; /* Reduced from 1rem to 0.5rem */
 }
 
 .profile-info h2 {
