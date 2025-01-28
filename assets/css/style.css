@@ -209,13 +209,13 @@ a:hover {
     color: #666;
     line-height: 1.6;
 }
-
+/* Teaching page styles */
 .course-section {
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .course-item {
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem; /* Keep space between courses */
     padding-bottom: 2rem;
     border-bottom: 1px solid #eee;
 }
@@ -226,17 +226,18 @@ a:hover {
 
 .course-item h3 {
     color: var(--text-color);
-    margin: 0 0 1rem 0;
+    margin: 0 0 0.5rem 0; /* Reduced margin after course title */
     font-size: 1.3rem;
 }
 
 .course-details {
-    margin: 1rem 0;
+    margin: 0.5rem 0; /* Reduced margin around details section */
 }
 
 .course-details p {
-    margin: 0.5rem 0;
+    margin: 0; /* Remove margins between detail lines */
     color: #666;
+    line-height: 1.4; /* Slightly reduced line height */
 }
 
 .course-details strong {
@@ -244,12 +245,12 @@ a:hover {
 }
 
 .course-description {
-    margin-top: 1rem;
+    margin-top: 0.5rem; /* Reduced margin before description */
 }
 
 .course-description p {
     margin: 0;
-    line-height: 1.6;
+    line-height: 1.4; /* Slightly reduced line height */
 }
 
 /* Responsive design */
