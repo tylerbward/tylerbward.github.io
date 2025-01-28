@@ -253,6 +253,45 @@ a:hover {
     line-height: 1.4; /* Slightly reduced line height */
 }
 
+.research-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.research-list > li {
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.research-list ul {
+    list-style-type: none;
+    padding-left: 1.5rem;
+    margin-top: 0.25rem;
+}
+
+.research-list ul li {
+    font-weight: normal;
+    margin: 0.25rem 0;
+    color: #666;
+}
+
+.research-list > li::before {
+    content: "•";
+    color: var(--primary-color);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.research-list ul li::before {
+    content: "-";
+    color: #666;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
     .profile-section {
