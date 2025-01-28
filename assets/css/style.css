@@ -210,6 +210,48 @@ a:hover {
     line-height: 1.6;
 }
 
+.course-section {
+    margin-top: 2rem;
+}
+
+.course-item {
+    margin-bottom: 2.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #eee;
+}
+
+.course-item:last-child {
+    border-bottom: none;
+}
+
+.course-item h3 {
+    color: var(--text-color);
+    margin: 0 0 1rem 0;
+    font-size: 1.3rem;
+}
+
+.course-details {
+    margin: 1rem 0;
+}
+
+.course-details p {
+    margin: 0.5rem 0;
+    color: #666;
+}
+
+.course-details strong {
+    color: var(--text-color);
+}
+
+.course-description {
+    margin-top: 1rem;
+}
+
+.course-description p {
+    margin: 0;
+    line-height: 1.6;
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
     .profile-section {
