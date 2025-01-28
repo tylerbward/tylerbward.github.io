@@ -177,6 +177,39 @@ a:hover {
     margin-right: 0.25rem;
 }
 
+/* Research page styles */
+.section h3 {
+    color: var(--text-color);
+    margin: 1.5rem 0 1rem 0;
+    font-size: 1.25rem;
+}
+
+.section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.section ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.project-item {
+    margin-bottom: 2rem;
+}
+
+.project-item h4 {
+    color: var(--text-color);
+    margin: 0 0 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+.project-item p {
+    margin: 0;
+    color: #666;
+    line-height: 1.6;
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
     .profile-section {
