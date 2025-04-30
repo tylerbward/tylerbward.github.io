@@ -124,8 +124,34 @@ nav ul {
 }
 
 /* News items styles */
+/* Updated news items styles */
 .news-item {
     margin-bottom: 1rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+.news-item p {
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+}
+
+.news-item p::before {
+    content: "•";
+    margin-right: 0.5rem;
+    flex-shrink: 0;
+}
+
+.news-item i {
+    margin-right: 0.5rem;
+    flex-shrink: 0;
+    min-width: 65px; /* Adjust width as needed for your longest month */
+    display: inline-block;
+}
+
+.news-item a {
+    word-break: break-word;
 }
 
 /* General link styles */
