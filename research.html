@@ -36,54 +36,143 @@
                 <h2>Research</h2>
                 <section class="section">
                     <h3>Research Interests</h3>
-                    <ul class="research-list">
-                        <li>Machine Learning
-                            <ul>
-                                <li>Self-supervised learning</li>
-                                <li>Semi-supervised learning</li>
-                                <li>Multi-task learning</li>
-                                <li>Representation learning</li>
-                                <li>Deep reinforcement learning</li>
-                            </ul>
-                        </li>
-                        <li>Computer Vision
-                            <ul>
-                                <li>Segmentation</li>
-                                <li>Object detection</li>
-                                <li>Object tracking</li>
-                            </ul>
-                        </li>
-                        <li>Medical Imaging
-                            <ul>
-                                <li>Data-efficient medical imaging</li>
-                                <li>Breast cancer margin assessment</li>
-                                <li>Muscular injury/recovery</li>
-                                <li>Brain function recognition</li>
-                                <li>Brain disorder diagnosis</li>
-                            </ul>
-                        </li>
-                        <li>Industrial AI
-                            <ul>
-                                <li>Predictive maintenance</li>
-                                <li>Sensor data imputation</li>
-                                <li>Data-driven quality improvement</li>
-                                <li>Simulation</li>
-                            </ul>
-                        </li>
-                        <li>Virtual Reality
-                            <ul>
-                                <li>VR for K-12 STEM education</li>
-                            </ul>
-                        </li>
-                        <li>Natural Language Processing
-                            <ul>
-                                <li>Topic modeling</li>
-                            </ul>
-                        </li>
-                    </ul>
+                    <div class="research-interests">
+                        <!-- Machine Learning -->
+                        <div class="research-category">
+                            <div class="category-header" onclick="toggleCategory(this)">
+                                <div>
+                                    <i class="fas fa-brain category-icon"></i>
+                                    <span>Machine Learning</span>
+                                </div>
+                                <i class="fas fa-chevron-down dropdown-arrow"></i>
+                            </div>
+                            <div class="category-content">
+                                <ul class="subcategory-list">
+                                    <li class="subcategory-item">Self-supervised learning</li>
+                                    <li class="subcategory-item">Semi-supervised learning</li>
+                                    <li class="subcategory-item">Multi-task learning</li>
+                                    <li class="subcategory-item">Representation learning</li>
+                                    <li class="subcategory-item">Deep reinforcement learning</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Computer Vision -->
+                        <div class="research-category">
+                            <div class="category-header" onclick="toggleCategory(this)">
+                                <div>
+                                    <i class="fas fa-eye category-icon"></i>
+                                    <span>Computer Vision</span>
+                                </div>
+                                <i class="fas fa-chevron-down dropdown-arrow"></i>
+                            </div>
+                            <div class="category-content">
+                                <ul class="subcategory-list">
+                                    <li class="subcategory-item">Segmentation</li>
+                                    <li class="subcategory-item">Object detection</li>
+                                    <li class="subcategory-item">Object tracking</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Medical Imaging -->
+                        <div class="research-category">
+                            <div class="category-header" onclick="toggleCategory(this)">
+                                <div>
+                                    <i class="fas fa-heartbeat category-icon"></i>
+                                    <span>Medical Imaging</span>
+                                </div>
+                                <i class="fas fa-chevron-down dropdown-arrow"></i>
+                            </div>
+                            <div class="category-content">
+                                <ul class="subcategory-list">
+                                    <li class="subcategory-item">Data-efficient medical imaging</li>
+                                    <li class="subcategory-item">Breast cancer margin assessment</li>
+                                    <li class="subcategory-item">Muscular injury/recovery</li>
+                                    <li class="subcategory-item">Brain function recognition</li>
+                                    <li class="subcategory-item">Brain disorder diagnosis</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Industrial AI -->
+                        <div class="research-category">
+                            <div class="category-header" onclick="toggleCategory(this)">
+                                <div>
+                                    <i class="fas fa-industry category-icon"></i>
+                                    <span>Industrial AI</span>
+                                </div>
+                                <i class="fas fa-chevron-down dropdown-arrow"></i>
+                            </div>
+                            <div class="category-content">
+                                <ul class="subcategory-list">
+                                    <li class="subcategory-item">Predictive maintenance</li>
+                                    <li class="subcategory-item">Sensor data imputation</li>
+                                    <li class="subcategory-item">Data-driven quality improvement</li>
+                                    <li class="subcategory-item">Simulation</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Virtual Reality -->
+                        <div class="research-category">
+                            <div class="category-header" onclick="toggleCategory(this)">
+                                <div>
+                                    <i class="fas fa-vr-cardboard category-icon"></i>
+                                    <span>Virtual Reality</span>
+                                </div>
+                                <i class="fas fa-chevron-down dropdown-arrow"></i>
+                            </div>
+                            <div class="category-content">
+                                <ul class="subcategory-list">
+                                    <li class="subcategory-item">VR for K-12 STEM education</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Natural Language Processing -->
+                        <div class="research-category">
+                            <div class="category-header" onclick="toggleCategory(this)">
+                                <div>
+                                    <i class="fas fa-comments category-icon"></i>
+                                    <span>Natural Language Processing</span>
+                                </div>
+                                <i class="fas fa-chevron-down dropdown-arrow"></i>
+                            </div>
+                            <div class="category-content">
+                                <ul class="subcategory-list">
+                                    <li class="subcategory-item">Topic modeling</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </section>
             </div>
         </div>
     </main>
+
+    <script>
+        function toggleCategory(header) {
+            const content = header.nextElementSibling;
+            const isActive = header.classList.contains('active');
+            
+            // Close all other categories
+            document.querySelectorAll('.category-header.active').forEach(activeHeader => {
+                if (activeHeader !== header) {
+                    activeHeader.classList.remove('active');
+                    activeHeader.nextElementSibling.classList.remove('active');
+                }
+            });
+            
+            // Toggle current category
+            if (isActive) {
+                header.classList.remove('active');
+                content.classList.remove('active');
+            } else {
+                header.classList.add('active');
+                content.classList.add('active');
+            }
+        }
+    </script>
 </body>
 </html>
