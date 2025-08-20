@@ -156,11 +156,11 @@
             const content = header.nextElementSibling;
             const isActive = header.classList.contains('active');
             
-            // Close all other categories
-            document.querySelectorAll('.category-header.active').forEach(activeHeader => {
-                if (activeHeader !== header) {
-                    activeHeader.classList.remove('active');
-                    activeHeader.nextElementSibling.classList.remove('active');
+            // Close all other categories first
+            document.querySelectorAll('.category-header').forEach(otherHeader => {
+                if (otherHeader !== header && otherHeader.classList.contains('active')) {
+                    otherHeader.classList.remove('active');
+                    otherHeader.nextElementSibling.classList.remove('active');
                 }
             });
             
@@ -173,6 +173,14 @@
                 content.classList.add('active');
             }
         }
+        
+        // Ensure all categories are closed on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.category-header').forEach(header => {
+                header.classList.remove('active');
+                header.nextElementSibling.classList.remove('active');
+            });
+        });
     </script>
 </body>
 </html>
