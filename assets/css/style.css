@@ -254,8 +254,8 @@ a:hover {
 }
 
 .service-description {
-    margin-bottom: 2rem; /* Keep space between courses */
-    padding-bottom: 2rem;
+    margin-bottom: 1rem; /* Keep space between courses */
+    padding-bottom: 1rem;
     border-bottom: 1px solid #eee;
 }
 
