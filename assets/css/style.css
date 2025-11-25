@@ -253,6 +253,17 @@ a:hover {
     line-height: 1.4; /* Slightly reduced line height */
 }
 
+.service-description {
+    margin-bottom: 2rem; /* Keep space between courses */
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #eee;
+}
+
+.service-description p {
+    margin: 0;
+    line-height: 1.4; /* Slightly reduced line height */
+}
+
 /* Research interests dropdown styles */
 .research-interests {
     margin-top: 1rem;
