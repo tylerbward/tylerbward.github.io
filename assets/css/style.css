@@ -100,7 +100,24 @@ nav ul {
     align-items: center;
 }
 
-.social-links a:hover {
+.social-links a:hover {.hidden-news {
+    display: none;
+}
+
+.toggle-news-btn {
+    background: none;
+    border: none;
+    color: #0066cc;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 10px 0;
+    text-decoration: underline;
+    margin-top: 10px;
+}
+
+.toggle-news-btn:hover {
+    color: #004499;
+}
     text-decoration: underline;
 }
 
@@ -432,5 +449,24 @@ a:hover {
 
     .category-content.active {
         padding: 0.875rem 1rem;
+    }
+
+    .hidden-news {
+    display: none;
+    }
+    
+    .toggle-news-btn {
+        background: none;
+        border: none;
+        color: #0066cc;
+        cursor: pointer;
+        font-size: 1rem;
+        padding: 10px 0;
+        text-decoration: underline;
+        margin-top: 10px;
+    }
+    
+    .toggle-news-btn:hover {
+        color: #004499;
     }
 }
