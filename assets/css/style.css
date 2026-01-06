@@ -119,7 +119,7 @@ nav ul {
 .toggle-news-btn {
     background: none;
     border: none;
-    color: #0066cc;
+    color: var(--primary-color);
     cursor: pointer;
     font-size: 1rem;
     padding: 0;
@@ -128,7 +128,7 @@ nav ul {
 }
 
 .toggle-news-btn:hover {
-    color: #004499;
+    color: var(--primary-color);
 }
 
 /* Section styles */
