@@ -321,7 +321,7 @@ a:hover {
 }
 
 .category-header.active {
-    background: linear-gradient(135deg, var(--primary-color) 0%, #1976D2 100%);
+    background: var(--primary-color);
     color: white;
 }
 
