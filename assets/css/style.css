@@ -73,6 +73,10 @@ nav ul {
     margin-bottom: 0.5rem; /* Reduced from 1rem to 0.5rem */
 }
 
+.profile-info {
+    text-align: justify;
+}
+
 .profile-info h2 {
     color: var(--text-color);
     border-bottom: 2px solid var(--primary-color);
