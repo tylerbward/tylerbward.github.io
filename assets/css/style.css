@@ -85,7 +85,12 @@ nav ul {
     font-weight: bold; /* Make 'About' bold */
 }
 
+.profile-info h3 {
+    margin-bottom: 0.5rem;
+}
+
 .profile-info h4 {
+    margin-top: 0.5rem;
     margin-bottom: 0;
 }
 
