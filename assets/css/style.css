@@ -89,7 +89,7 @@ nav ul {
     margin-bottom: 0.5rem;
 }
 
-.profile-info h4 {
+.profile-info h4 + p {
     margin-top: 0.5rem;
     margin-bottom: 0;
 }
