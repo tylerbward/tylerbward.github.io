@@ -58,6 +58,11 @@ nav ul {
     font-size: 2rem;
 }
 
+.profile-container h1 {
+    margin: 0;
+    text-align: left;
+}
+
 .profile-container h2 {
     margin: 0 0 1rem 0;
     font-weight: normal;
