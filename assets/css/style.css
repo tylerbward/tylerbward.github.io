@@ -75,6 +75,53 @@ nav ul {
     text-align: left;
 }
 
+.profile-container {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.profile-name-block {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+}
+
+.social-icons-vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-icons-vertical a {
+    color: var(--primary-color);
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.social-icons-vertical a:hover {
+    color: var(--primary-color);
+    opacity: 0.75;
+}
+
+.vertical-line {
+    width: 2px;
+    background-color: black;
+    align-self: stretch;
+}
+
+.name-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
 .profile-image {
     width: 250px;
     height: 250px;
