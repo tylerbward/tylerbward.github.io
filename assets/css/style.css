@@ -65,6 +65,11 @@ nav ul {
     font-size: 1rem; /* Match the size of social links */
 }
 
+.profile-container h2 {
+    margin: 0;
+    text-align: left;
+}
+
 .profile-image {
     width: 250px;
     height: 250px;
