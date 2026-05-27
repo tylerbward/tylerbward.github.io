@@ -85,6 +85,10 @@ nav ul {
     font-weight: bold; /* Make 'About' bold */
 }
 
+.profile-info h4 {
+    margin-bottom: 0;
+}
+
 /* Social links styles */
 .social-links {
     list-style: none;
