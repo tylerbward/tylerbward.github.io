@@ -130,7 +130,7 @@ nav ul {
     width: 2px;
     background-color: var(--primary-color);
     align-self: stretch;
-    margin-top: 10px;    /* shrinks the line from the top */
+    margin-top: 15px;    /* shrinks the line from the top */
     margin-bottom: 7px; /* shrinks the line from the bottom */
 }
 
