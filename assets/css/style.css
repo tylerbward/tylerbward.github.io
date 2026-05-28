@@ -102,7 +102,7 @@ nav ul {
 .profile-name-block {
     display: flex;
     flex-direction: row;
-    align-items: stretch;
+    align-items: center;
     gap: 0.75rem;
     margin-top: 0.5rem;
 }
@@ -128,7 +128,7 @@ nav ul {
 
 .vertical-line {
     width: 2px;
-    background-color: black;
+    background-color: var(--primary-color);
     align-self: stretch;
 }
 
