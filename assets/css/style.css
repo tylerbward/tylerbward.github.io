@@ -131,7 +131,7 @@ nav ul {
     background-color: var(--primary-color);
     align-self: stretch;
     margin-top: 4px;    /* shrinks the line from the top */
-    margin-bottom: 8px; /* shrinks the line from the bottom */
+    margin-bottom: 7px; /* shrinks the line from the bottom */
 }
 
 .name-info {
