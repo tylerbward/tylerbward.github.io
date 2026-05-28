@@ -129,7 +129,9 @@ nav ul {
 .vertical-line {
     width: 2px;
     background-color: var(--primary-color);
-    height: 80px; /* adjust to taste */
+    align-self: stretch;
+    margin-top: 4px;    /* shrinks the line from the top */
+    margin-bottom: 8px; /* shrinks the line from the bottom */
 }
 
 .name-info {
