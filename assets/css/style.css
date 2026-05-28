@@ -110,8 +110,9 @@ nav ul {
 .social-icons-vertical {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 4px; /* adjust to taste */
+    gap: 4px;
 }
 
 .social-icons-vertical a {
