@@ -58,69 +58,12 @@ nav ul {
     font-size: 2rem;
 }
 
-.profile-container h1 {
-    margin: 0;
-    text-align: left;
-}
-
 .profile-container h2 {
     margin: 0 0 1rem 0;
     font-weight: normal;
     color: #666;
     font-size: 1rem; /* Match the size of social links */
 }
-
-.profile-container h2 {
-    margin: 0;
-    text-align: left;
-}
-
-.profile-container {
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.profile-name-block {
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    gap: 0.75rem;
-    margin-top: 0.5rem;
-}
-
-.social-icons-vertical {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.social-icons-vertical a {
-    color: var(--primary-color);
-    font-size: 1rem;
-    display: flex;
-    align-items: center;
-}
-
-.social-icons-vertical a:hover {
-    color: var(--primary-color);
-    opacity: 0.75;
-}
-
-.vertical-line {
-    width: 2px;
-    background-color: black;
-    align-self: stretch;
-}
-
-.name-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
 
 .profile-image {
     width: 250px;
@@ -140,15 +83,6 @@ nav ul {
     padding-bottom: 0.5rem;
     margin-top: 0;
     font-weight: bold; /* Make 'About' bold */
-}
-
-.profile-info h3 {
-    margin-bottom: 0.5rem;
-}
-
-.profile-info h4 + p {
-    margin-top: 0.5rem;
-    margin-bottom: 0;
 }
 
 /* Social links styles */
