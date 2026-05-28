@@ -49,30 +49,22 @@ nav ul {
 }
 
 .profile-container {
-    text-align: center;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-.profile-container h1 {
-    margin: 0.5rem 0 0.25rem 0; /* Reduced top margin from 1rem to 0.5rem */
-    color: var(--text-color);
-    font-size: 2rem;
-}
-
-.profile-container h1 {
+.profile-container h1,
+.profile-container h2 {
     margin: 0;
     text-align: left;
 }
 
 .profile-container h2 {
-    margin: 0 0 1rem 0;
     font-weight: normal;
     color: #666;
-    font-size: 1rem; /* Match the size of social links */
-}
-
-.profile-container h2 {
-    margin: 0;
-    text-align: left;
+    font-size: 1rem;
 }
 
 .profile-image {
@@ -80,7 +72,12 @@ nav ul {
     height: 250px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 0.5rem; /* Reduced from 1rem to 0.5rem */
+    margin-bottom: 0.5rem;
+}
+
+.profile-container h1 {
+    color: var(--text-color);
+    font-size: 2rem;
 }
 
 .profile-info {
