@@ -486,6 +486,11 @@ a:hover {
     }
 }
 
+h4 {
+    margin: 0 0 0 0;
+    font-size: 1rem;
+}
+
 h4 + p {
     margin-top: 0;
 }
