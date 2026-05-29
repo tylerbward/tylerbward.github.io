@@ -485,3 +485,8 @@ a:hover {
         padding: 0.875rem 1rem;
     }
 }
+
+h4 {
+    margin: 0;
+    font-size: 1rem;
+}
