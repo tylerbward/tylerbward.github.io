@@ -113,6 +113,7 @@ nav ul {
     justify-content: center;
     align-items: center;
     gap: 11px;
+    margin-top: 4px; /* adjust to taste */
 }
 
 .social-icons-vertical a {
