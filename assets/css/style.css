@@ -117,7 +117,7 @@ nav ul {
 
 .social-icons-vertical a {
     color: var(--primary-color);
-    font-size: 1rem;
+    font-size: 1.25rem;
     display: flex;
     align-items: center;
 }
