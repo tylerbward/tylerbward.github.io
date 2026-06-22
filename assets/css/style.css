@@ -396,12 +396,20 @@ a:hover {
     margin: 0;
 }
 
-.subcategory-item {
+/*.subcategory-item {
     padding: 0.4rem 0;
     color: #555;
     font-size: 0.95rem;
     position: relative;
     padding-left: 1.5rem;
+    transition: color 0.2s ease;
+}*/
+
+.subcategory-item {
+    padding: 0.4rem 0;
+    color: #555;
+    font-size: 0.95rem;
+    position: relative;
     transition: color 0.2s ease;
 }
 
@@ -409,14 +417,14 @@ a:hover {
     color: var(--primary-color);
 }
 
-.subcategory-item::before {
+/*.subcategory-item::before {
     content: "→";
     position: absolute;
     left: 0;
     color: var(--primary-color);
     font-weight: bold;
     opacity: 0.7;
-}
+}*/
 
 /* Legacy research list styles - keeping for backward compatibility */
 .research-list {
