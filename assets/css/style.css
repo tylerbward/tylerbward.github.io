@@ -413,9 +413,11 @@ a:hover {
     transition: color 0.2s ease;
 }
 
+/*
 .subcategory-item:hover {
     color: var(--primary-color);
 }
+*/
 
 /*.subcategory-item::before {
     content: "→";
