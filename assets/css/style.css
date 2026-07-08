@@ -390,6 +390,13 @@ a:hover {
     padding: 1rem 1.25rem;
 }
 
+/* Scrollable variant: for dropdowns whose content can exceed the
+   default max-height. Same max-height budget as .category-content.active,
+   but switches from clipping (hidden) to a scrollbar (auto) once open. */
+.category-content--scrollable.active {
+    overflow-y: auto;
+}
+
 .subcategory-list {
     list-style: none;
     padding: 0;
